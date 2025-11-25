@@ -6,6 +6,15 @@ public class Cofrinho {
 	
   private ArrayList <Moeda> listaMoedas = new ArrayList <Moeda> ();
 
-
-
+  public void adicionar(Moeda m) {
+    listaMoedas.add(m);
+	}
+  public void remover(Moeda m) {
+    listaMoedas.remove(m);
+    }
+  public void listar() {
+	for (Moeda m : listaMoedas) {
+	  System.out.println(m);
+	}
+    }
 }
